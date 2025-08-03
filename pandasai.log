@@ -1,0 +1,1028 @@
+2025-07-24 00:08:40 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 00:08:40 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 00:08:40 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 00:08:44 [WARNING]  * Debugger is active!
+2025-07-24 00:08:44 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 00:09:35 [INFO] 127.0.0.1 - - [24/Jul/2025 00:09:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:09:35 [INFO] Question: hi
+2025-07-24 00:09:36 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-07-24 00:09:36 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\server.py', reloading
+2025-07-24 00:09:36 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socketserver.py', reloading
+2025-07-24 00:09:36 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\threading.py', reloading
+2025-07-24 00:09:36 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x000001F2C7A5F7D0>> LLM...
+2025-07-24 00:09:36 [INFO] Prompt ID: 294c0b6f-78cc-4f52-90c4-56432ca0a6b4
+2025-07-24 00:09:36 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:11:37 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 00:11:37 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 00:11:37 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 00:11:42 [WARNING]  * Debugger is active!
+2025-07-24 00:11:42 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 00:12:04 [INFO] 127.0.0.1 - - [24/Jul/2025 00:12:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:12:04 [INFO] Question: What is the total sales of mts foods?
+2025-07-24 00:12:05 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x0000016F39F5FA50>> LLM...
+2025-07-24 00:12:05 [INFO] Prompt ID: 832d4fa1-6677-4ac0-afab-d9a04bffd0e9
+2025-07-24 00:12:05 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:12:05 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:12:05 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\pipeline.py', reloading
+2025-07-24 00:12:05 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:12:05 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:12:05 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+35932,7091,Baked Provisions (Prodigy Holdings),Knoxx Tomato Paste 24-26 brix 10kg*2,Adjustment Notes,,415,25-06-2024,1170.24,False,,Distributor,,,310.0,,119
+36123,7286,Primo Fine Foods,FoodKraft Garlic Granules 8-16 mesh,Invoice,5.0,217,06-01-2025,877.2,True,Sutan,,45.0,Carton,1430.0,0.42,198
+34025,6943,Manjits Indian Restaurant,Knoxx Tomato Paste in Drums (28-30 Brix),Invoice,9.0,256,03-07-2024,416.0,,Ajay Singh,Manufacturer,8.0,20Kg Bag,,8.124454545,116
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the total sales of mts foods?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:12:05 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\prompt_generation.py', reloading
+2025-07-24 00:12:05 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:14:25 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 00:14:25 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 00:14:25 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 00:14:29 [WARNING]  * Debugger is active!
+2025-07-24 00:14:29 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 00:15:00 [INFO] 127.0.0.1 - - [24/Jul/2025 00:15:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:15:00 [INFO] Question: What is the total sales of mts foods?
+2025-07-24 00:15:01 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x0000021F1EC8FB50>> LLM...
+2025-07-24 00:15:01 [INFO] Prompt ID: b379a14c-7f2f-4a44-abd4-43b0e1e49006
+2025-07-24 00:15:01 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:15:01 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:15:01 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:15:01 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:15:01 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+31895,5698,BEAK & JOHNSTON PTY LTD,Knoxx Tomato Paste 28 -30 brix 10kg*2,Adjustment Notes,,539,25-02-2025,239.0,False,Sutan,Distributor,8411.2,Carton,80.0,9.555909091,110
+32016,7187,Bulk Food Services NSW Pty Ltd,FoodKraft Ginger Granules,Invoice,9.0,83,07-05-2024,5400.0,True,Ajay Singh,,500.0,10Kg Bag,,,142
+32222,5830,The Food Company,Parboiled Tastic Rice 10 kg,Adjustment Notes,8.0,552,21-11-2024,4032.0,,,Manufacturer,,,40.0,1.40625,115
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the total sales of mts foods?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:15:01 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:15:28 [INFO] Prompt used:
+            None
+            
+2025-07-24 00:15:28 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_generator.py', reloading
+2025-07-24 00:15:28 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\logging\\__init__.py', reloading
+2025-07-24 00:15:28 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\encodings\\cp1252.py', reloading
+2025-07-24 00:15:28 [INFO] Executing Step 4: CachePopulation
+2025-07-24 00:15:28 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 00:15:28 [INFO] Saving charts to C:\Users\sathu\OneDrive\Desktop\sathu-chat\salesBot_knoxx\exports\charts\temp_chart.png
+2025-07-24 00:15:28 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\helpers\\save_chart.py', reloading
+2025-07-24 00:15:28 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_cleaning.py', reloading
+2025-07-24 00:15:28 [INFO] Executing Step 6: CodeExecution
+2025-07-24 00:15:28 [INFO] Executing Step 7: ResultValidation
+2025-07-24 00:15:28 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\result_validation.py', reloading
+2025-07-24 00:15:28 [INFO] Executing Step 8: ResultParsing
+2025-07-24 00:15:28 [INFO] 127.0.0.1 - - [24/Jul/2025 00:15:28] "POST /chat HTTP/1.1" 200 -
+2025-07-24 00:29:21 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 00:29:21 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 00:29:21 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 00:29:24 [WARNING]  * Debugger is active!
+2025-07-24 00:29:24 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 00:45:55 [INFO] 127.0.0.1 - - [24/Jul/2025 00:45:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:45:55 [INFO] Question: total sales of mts foods?
+2025-07-24 00:45:56 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x000001D039BAFCD0>> LLM...
+2025-07-24 00:45:56 [INFO] Prompt ID: 2c0c7a3b-805b-42f4-bc90-22bf43482b4a
+2025-07-24 00:45:56 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:45:56 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:45:56 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:45:56 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:45:56 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+36908,6539,MKS Foods,Knoxx Tomato Paste 24-26 brix 10kg*2,Invoice,1.0,201,01-08-2024,333.0,,,,696.0,20Kg Bag,820.0,0.145833333,81
+33248,5766,SVS Foods,Rawayat Supreme Rice 20kg,Adjustment Notes,,490,23-04-2024,495.0,True,Ajay Singh,Distributor,,,,,155
+32495,6413,FoodLink Australia Pty Ltd,FoodKraft Garlic Granules 40-80 mesh,Invoice,3.0,530,19-07-2024,108.0,False,Sutan,Manufacturer,700.0,10Kg Bag,52.5,1.875,89
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ total sales of mts foods?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:45:56 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:46:11 [INFO] Prompt used:
+            None
+            
+2025-07-24 00:46:11 [INFO] Executing Step 4: CachePopulation
+2025-07-24 00:46:11 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 00:46:11 [INFO] Saving charts to C:\Users\sathu\OneDrive\Desktop\sathu-chat\salesBot_knoxx\exports\charts\temp_chart.png
+2025-07-24 00:46:11 [INFO] Executing Step 6: CodeExecution
+2025-07-24 00:46:11 [INFO] Executing Step 7: ResultValidation
+2025-07-24 00:46:11 [INFO] Executing Step 8: ResultParsing
+2025-07-24 00:46:11 [INFO] 127.0.0.1 - - [24/Jul/2025 00:46:11] "POST /chat HTTP/1.1" 200 -
+2025-07-24 00:47:14 [INFO] 127.0.0.1 - - [24/Jul/2025 00:47:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:47:15 [INFO] Question: MTS Foods & Spices Pty Ltd total sales
+2025-07-24 00:47:15 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x000001D039BAFCD0>> LLM...
+2025-07-24 00:47:15 [INFO] Prompt ID: d2b6f0a9-17f6-4266-a0f9-03a5226d1172
+2025-07-24 00:47:15 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:47:15 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:47:15 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:47:15 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:47:15 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+36908,6539,MKS Foods,Knoxx Tomato Paste 24-26 brix 10kg*2,Invoice,1.0,201,01-08-2024,333.0,,,,696.0,20Kg Bag,820.0,0.145833333,81
+33248,5766,SVS Foods,Rawayat Supreme Rice 20kg,Adjustment Notes,,490,23-04-2024,495.0,True,Ajay Singh,Distributor,,,,,155
+32495,6413,FoodLink Australia Pty Ltd,FoodKraft Garlic Granules 40-80 mesh,Invoice,3.0,530,19-07-2024,108.0,False,Sutan,Manufacturer,700.0,10Kg Bag,52.5,1.875,89
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ MTS Foods & Spices Pty Ltd total sales
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:47:15 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:47:28 [INFO] Prompt used:
+            None
+            
+2025-07-24 00:47:28 [INFO] Executing Step 4: CachePopulation
+2025-07-24 00:47:28 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 00:47:28 [INFO] Executing Step 6: CodeExecution
+2025-07-24 00:47:28 [INFO] Executing Step 7: ResultValidation
+2025-07-24 00:47:28 [INFO] Executing Step 8: ResultParsing
+2025-07-24 00:47:28 [INFO] 127.0.0.1 - - [24/Jul/2025 00:47:28] "POST /chat HTTP/1.1" 200 -
+2025-07-24 00:48:21 [INFO] 127.0.0.1 - - [24/Jul/2025 00:48:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:48:21 [INFO] 127.0.0.1 - - [24/Jul/2025 00:48:21] "POST /chat HTTP/1.1" 200 -
+2025-07-24 00:49:22 [INFO] 127.0.0.1 - - [24/Jul/2025 00:49:22] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:49:22 [INFO] Question: What are the top-3 products?
+2025-07-24 00:49:22 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x000001D039BAFCD0>> LLM...
+2025-07-24 00:49:22 [INFO] Prompt ID: b1ae6efc-5e7f-4993-b4a9-f9e590e844ce
+2025-07-24 00:49:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:49:22 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:49:22 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:49:22 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:49:22 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+36908,6539,MKS Foods,Knoxx Tomato Paste 24-26 brix 10kg*2,Invoice,1.0,201,01-08-2024,333.0,,,,696.0,20Kg Bag,820.0,0.145833333,81
+33248,5766,SVS Foods,Rawayat Supreme Rice 20kg,Adjustment Notes,,490,23-04-2024,495.0,True,Ajay Singh,Distributor,,,,,155
+32495,6413,FoodLink Australia Pty Ltd,FoodKraft Garlic Granules 40-80 mesh,Invoice,3.0,530,19-07-2024,108.0,False,Sutan,Manufacturer,700.0,10Kg Bag,52.5,1.875,89
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What are the top-3 products?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:49:22 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:49:52 [INFO] Prompt used:
+            None
+            
+2025-07-24 00:49:52 [INFO] Executing Step 4: CachePopulation
+2025-07-24 00:49:52 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 00:49:52 [INFO] Saving charts to C:\Users\sathu\OneDrive\Desktop\sathu-chat\salesBot_knoxx\exports\charts\temp_chart.png
+2025-07-24 00:49:52 [INFO] Executing Step 6: CodeExecution
+2025-07-24 00:49:52 [INFO] Executing Step 7: ResultValidation
+2025-07-24 00:49:52 [INFO] Executing Step 8: ResultParsing
+2025-07-24 00:49:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\flask\\json\\provider.py', reloading
+2025-07-24 00:49:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\__init__.py', reloading
+2025-07-24 00:49:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\encoder.py', reloading
+2025-07-24 00:49:52 [INFO] 127.0.0.1 - - [24/Jul/2025 00:49:52] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-07-24 00:52:20 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 00:52:20 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 00:52:20 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 00:52:24 [WARNING]  * Debugger is active!
+2025-07-24 00:52:24 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 00:52:43 [INFO] 127.0.0.1 - - [24/Jul/2025 00:52:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:52:43 [INFO] Question: what are the top-3 products?
+2025-07-24 00:52:44 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x000001F171C9FB10>> LLM...
+2025-07-24 00:52:44 [INFO] Prompt ID: ed7695ee-cb6a-4260-932f-e9aeb4cf438f
+2025-07-24 00:52:44 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:52:44 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:52:44 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:52:44 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:52:44 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+28027,7354,MKS Foods,Knoxx Diced Tomatoes 17.5Kg,Adjustment Notes,,348,26-03-2025,855.0,False,Ajay Singh,Manufacturer,60.0,,2340.0,0.477909091,84
+32193,5187,Thompson’s Wholesale Bakery Pty Ltd,Tomato Paste in Drums (36-38 brix),Adjustment Notes,1.0,21,05-11-2024,1367.6,,,,14.0,Master Bag - 5 Kg x 4,,,160
+23153,5760,Hindustan Imports,Foodkraft  Dehydrated Potato Cubes,Invoice,2.0,441,26-07-2024,877.2,True,Sutan,Distributor,,11.34 kg or 25 lb bag,469.8,0.8,120
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what are the top-3 products?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:52:44 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:53:08 [INFO] Prompt used:
+            None
+            
+2025-07-24 00:53:08 [INFO] Executing Step 4: CachePopulation
+2025-07-24 00:53:08 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 00:53:08 [INFO] Executing Step 6: CodeExecution
+2025-07-24 00:53:08 [INFO] Executing Step 7: ResultValidation
+2025-07-24 00:53:08 [INFO] Executing Step 8: ResultParsing
+2025-07-24 00:53:08 [INFO] 127.0.0.1 - - [24/Jul/2025 00:53:08] "POST /chat HTTP/1.1" 200 -
+2025-07-24 00:54:00 [INFO] 127.0.0.1 - - [24/Jul/2025 00:54:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 00:54:00 [INFO] Question: total sales of mts?
+2025-07-24 00:54:00 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x000001F171C9FB10>> LLM...
+2025-07-24 00:54:00 [INFO] Prompt ID: 800b3581-b860-446a-a202-3815ae0f2192
+2025-07-24 00:54:00 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 00:54:00 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 00:54:00 [INFO] Executing Step 1: CacheLookup
+2025-07-24 00:54:00 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 00:54:00 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+28027,7354,MKS Foods,Knoxx Diced Tomatoes 17.5Kg,Adjustment Notes,,348,26-03-2025,855.0,False,Ajay Singh,Manufacturer,60.0,,2340.0,0.477909091,84
+32193,5187,Thompson’s Wholesale Bakery Pty Ltd,Tomato Paste in Drums (36-38 brix),Adjustment Notes,1.0,21,05-11-2024,1367.6,,,,14.0,Master Bag - 5 Kg x 4,,,160
+23153,5760,Hindustan Imports,Foodkraft  Dehydrated Potato Cubes,Invoice,2.0,441,26-07-2024,877.2,True,Sutan,Distributor,,11.34 kg or 25 lb bag,469.8,0.8,120
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ total sales of mts?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 00:54:00 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 00:54:17 [INFO] Prompt used:
+            None
+            
+2025-07-24 00:54:17 [INFO] Executing Step 4: CachePopulation
+2025-07-24 00:54:17 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 00:54:17 [INFO] Executing Step 6: CodeExecution
+2025-07-24 00:54:17 [INFO] Executing Step 7: ResultValidation
+2025-07-24 00:54:17 [INFO] Executing Step 8: ResultParsing
+2025-07-24 00:54:17 [INFO] 127.0.0.1 - - [24/Jul/2025 00:54:17] "POST /chat HTTP/1.1" 200 -
+2025-07-24 00:56:54 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-07-24 01:01:59 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 01:01:59 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 01:01:59 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 01:02:03 [WARNING]  * Debugger is active!
+2025-07-24 01:02:03 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 01:02:49 [INFO] 127.0.0.1 - - [24/Jul/2025 01:02:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:02:49 [INFO] 127.0.0.1 - - [24/Jul/2025 01:02:49] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:03:11 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\datetime.py', reloading
+2025-07-24 01:08:21 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 01:08:21 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 01:08:21 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 01:08:25 [WARNING]  * Debugger is active!
+2025-07-24 01:08:25 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 01:09:09 [INFO] 127.0.0.1 - - [24/Jul/2025 01:09:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:09:10 [INFO] 127.0.0.1 - - [24/Jul/2025 01:09:10] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:13:29 [INFO] 127.0.0.1 - - [24/Jul/2025 01:13:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:13:29 [INFO] 127.0.0.1 - - [24/Jul/2025 01:13:29] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:13:48 [INFO] 127.0.0.1 - - [24/Jul/2025 01:13:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:13:48 [INFO] 127.0.0.1 - - [24/Jul/2025 01:13:48] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:17:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 01:17:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 01:17:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 01:17:52 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 01:21:02 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 01:21:02 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 01:21:02 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 01:21:06 [WARNING]  * Debugger is active!
+2025-07-24 01:21:06 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 01:21:52 [INFO] 127.0.0.1 - - [24/Jul/2025 01:21:52] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:21:52 [INFO] 127.0.0.1 - - [24/Jul/2025 01:21:52] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:22:08 [INFO] 127.0.0.1 - - [24/Jul/2025 01:22:08] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:22:08 [INFO] 127.0.0.1 - - [24/Jul/2025 01:22:08] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:24:41 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\traceback.py', reloading
+2025-07-24 01:25:04 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 01:25:04 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 01:25:04 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 01:25:08 [WARNING]  * Debugger is active!
+2025-07-24 01:25:08 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 01:25:35 [INFO] 127.0.0.1 - - [24/Jul/2025 01:25:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:25:35 [INFO] 127.0.0.1 - - [24/Jul/2025 01:25:35] "POST /chat HTTP/1.1" 200 -
+2025-07-24 01:27:01 [INFO] 127.0.0.1 - - [24/Jul/2025 01:27:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 01:27:01 [INFO] 127.0.0.1 - - [24/Jul/2025 01:27:01] "POST /chat HTTP/1.1" 200 -
+2025-07-24 06:12:39 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 06:12:39 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 06:12:39 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 06:12:48 [WARNING]  * Debugger is active!
+2025-07-24 06:12:48 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 06:13:18 [INFO] 127.0.0.1 - - [24/Jul/2025 06:13:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:13:44 [INFO] 127.0.0.1 - - [24/Jul/2025 06:13:44] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:14:33 [INFO] 127.0.0.1 - - [24/Jul/2025 06:14:33] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:16:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 06:16:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 06:16:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 06:17:14 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 06:17:14 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 06:17:14 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 06:17:23 [WARNING]  * Debugger is active!
+2025-07-24 06:17:23 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 06:17:46 [INFO] 127.0.0.1 - - [24/Jul/2025 06:17:46] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:17:46 [INFO] Question: what are the top-3 products?
+2025-07-24 06:17:48 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-07-24 06:17:48 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-07-24 06:17:48 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\server.py', reloading
+2025-07-24 06:17:48 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socketserver.py', reloading
+2025-07-24 06:17:48 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\threading.py', reloading
+2025-07-24 06:17:48 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x00000180707FFA10>> LLM...
+2025-07-24 06:17:48 [INFO] Prompt ID: 4541fb55-bff9-4a31-9651-a80c1bf84519
+2025-07-24 06:17:48 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 06:17:48 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 06:17:48 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\pipeline.py', reloading
+2025-07-24 06:17:48 [INFO] Executing Step 1: CacheLookup
+2025-07-24 06:17:48 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 06:17:49 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+34490,6370,Henfresh,Rawayat Creamy Sella Rice 20kg,Adjustment Notes,6.0,166,06-01-2025,1215.0,False,,Distributor,140.0,Carton,1500.0,,138
+33758,5254,Baked Provisions (Prodigy Holdings),Koh Koh Premium Long Grain Parboiled Rice (I) 10kg,Invoice,2.0,444,17-02-2025,2367.36,,Ajay Singh,,,Master Bag,,0.65625,84
+26525,6776,B&E Foods Pty Ltd,Buono Riso Italian Risotto Rice10kg,Invoice,,273,15-02-2024,1155.0,True,Sutan,Manufacturer,106.0,,735.0,0.5625,92
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what are the top-3 products?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 06:17:49 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\prompt_generation.py', reloading
+2025-07-24 06:17:49 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 06:20:54 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 06:20:54 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 06:20:54 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 06:21:04 [WARNING]  * Debugger is active!
+2025-07-24 06:21:04 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 06:21:12 [INFO] 127.0.0.1 - - [24/Jul/2025 06:21:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:21:12 [INFO] Question: what are the top-3 products?
+2025-07-24 06:21:14 [INFO] Running PandasAI with <bound method GeminiLLM.type of <GeminiLLM.GeminiLLM object at 0x0000027FD25DFAD0>> LLM...
+2025-07-24 06:21:14 [INFO] Prompt ID: c8e48f54-f58c-4158-b05f-c3031913ea0b
+2025-07-24 06:21:14 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-07-24 06:21:14 [INFO] Executing Step 0: ValidatePipelineInput
+2025-07-24 06:21:14 [INFO] Executing Step 1: CacheLookup
+2025-07-24 06:21:14 [INFO] Executing Step 2: PromptGeneration
+2025-07-24 06:21:14 [INFO] Using prompt: <dataframe>
+dfs[0]:3985x17
+id,docnumber,customername,itemname,transactiontype,InternalIndex,customerid,txndate,amt,isontheincentiveprogram,regionalsalesmanagername,industry,qty,Unit_Name,qtykg,qtypallets,itemid
+25496,5120,BEAK & JOHNSTON PTY LTD,Knoxx Tomato Paste 21 Kg,Adjustment Notes,7.0,201,07-05-2024,3900.0,False,Ajay Singh,Manufacturer,,Master Bag - 5 Kg x 4,9.0,0.71875,214
+32482,6438,Colonial Foods,Rawayat Basmati Golden Sella Rice 20kg (C),Adjustment Notes,,216,30-05-2025,2814.22,,,Distributor,79.0,20Kg Bag,2177.28,0.0015625,167
+25342,6277,Rawbone Pet Food,FoodKraft White Onion Powder,Invoice,6.0,441,14-04-2025,2691.36,True,Sutan,,30.0,,,,196
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what are the top-3 products?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-07-24 06:21:14 [INFO] Executing Step 3: CodeGenerator
+2025-07-24 06:21:39 [INFO] Prompt used:
+            None
+            
+2025-07-24 06:21:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_generator.py', reloading
+2025-07-24 06:21:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\logging\\__init__.py', reloading
+2025-07-24 06:21:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\encodings\\cp1252.py', reloading
+2025-07-24 06:21:39 [INFO] Executing Step 4: CachePopulation
+2025-07-24 06:21:39 [INFO] Executing Step 5: CodeCleaning
+2025-07-24 06:21:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_cleaning.py', reloading
+2025-07-24 06:21:39 [INFO] Executing Step 6: CodeExecution
+2025-07-24 06:21:39 [INFO] Executing Step 7: ResultValidation
+2025-07-24 06:21:39 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\result_validation.py', reloading
+2025-07-24 06:21:39 [INFO] Executing Step 8: ResultParsing
+2025-07-24 06:21:39 [INFO] 127.0.0.1 - - [24/Jul/2025 06:21:39] "POST /chat HTTP/1.1" 200 -
+2025-07-24 06:28:19 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 06:28:19 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 06:28:19 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 06:28:28 [WARNING]  * Debugger is active!
+2025-07-24 06:28:28 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 06:28:54 [INFO] 127.0.0.1 - - [24/Jul/2025 06:28:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:29:18 [INFO] 127.0.0.1 - - [24/Jul/2025 06:29:18] "POST /chat HTTP/1.1" 200 -
+2025-07-24 06:29:31 [INFO] 127.0.0.1 - - [24/Jul/2025 06:29:31] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:29:52 [INFO] 127.0.0.1 - - [24/Jul/2025 06:29:52] "POST /chat HTTP/1.1" 200 -
+2025-07-24 06:37:19 [INFO] 127.0.0.1 - - [24/Jul/2025 06:37:19] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:37:43 [INFO] 127.0.0.1 - - [24/Jul/2025 06:37:43] "POST /chat HTTP/1.1" 200 -
+2025-07-24 06:39:40 [INFO] 127.0.0.1 - - [24/Jul/2025 06:39:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:40:04 [INFO] 127.0.0.1 - - [24/Jul/2025 06:40:04] "POST /chat HTTP/1.1" 200 -
+2025-07-24 06:42:05 [INFO] 127.0.0.1 - - [24/Jul/2025 06:42:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 06:42:05 [INFO] 127.0.0.1 - - [24/Jul/2025 06:42:05] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:04:46 [INFO] 127.0.0.1 - - [24/Jul/2025 07:04:46] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:05:17 [INFO] 127.0.0.1 - - [24/Jul/2025 07:05:17] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:05:54 [INFO] 127.0.0.1 - - [24/Jul/2025 07:05:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:05:54 [INFO] 127.0.0.1 - - [24/Jul/2025 07:05:54] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:08:00 [INFO] 127.0.0.1 - - [24/Jul/2025 07:08:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:08:00 [INFO] 127.0.0.1 - - [24/Jul/2025 07:08:00] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:09:12 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 07:09:12 [INFO]  * Detected change in 'C:\\Users\\sathu\\OneDrive\\Desktop\\sathu-chat\\salesBot_knoxx\\app.py', reloading
+2025-07-24 07:13:10 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:13:10 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:13:10 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 07:13:19 [WARNING]  * Debugger is active!
+2025-07-24 07:13:19 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 07:13:54 [INFO] 127.0.0.1 - - [24/Jul/2025 07:13:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:13:54 [INFO] 127.0.0.1 - - [24/Jul/2025 07:13:54] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:16:03 [INFO] 127.0.0.1 - - [24/Jul/2025 07:16:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:16:06 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\helpers\\logger.py', reloading
+2025-07-24 07:16:06 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\agent\\base.py', reloading
+2025-07-24 07:16:06 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\smart_dataframe\\__init__.py', reloading
+2025-07-24 07:16:06 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\flask\\app.py', reloading
+2025-07-24 07:16:06 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\generate_chat_pipeline.py', reloading
+2025-07-24 07:16:44 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:16:44 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:16:44 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 07:16:53 [WARNING]  * Debugger is active!
+2025-07-24 07:16:53 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 07:17:17 [INFO] 127.0.0.1 - - [24/Jul/2025 07:17:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:17:34 [INFO] 127.0.0.1 - - [24/Jul/2025 07:17:34] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:18:15 [INFO] 127.0.0.1 - - [24/Jul/2025 07:18:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:18:29 [INFO] 127.0.0.1 - - [24/Jul/2025 07:18:29] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:18:48 [INFO] 127.0.0.1 - - [24/Jul/2025 07:18:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:19:11 [INFO] 127.0.0.1 - - [24/Jul/2025 07:19:11] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:19:36 [INFO] 127.0.0.1 - - [24/Jul/2025 07:19:36] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:19:56 [ERROR] Pipeline failed on step 3: No code found in the response
+2025-07-24 07:19:56 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\llm\\base.py', reloading
+2025-07-24 07:19:56 [INFO] 127.0.0.1 - - [24/Jul/2025 07:19:56] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:20:33 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:20:33 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:20:33 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 07:20:42 [WARNING]  * Debugger is active!
+2025-07-24 07:20:42 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 07:20:56 [INFO] 127.0.0.1 - - [24/Jul/2025 07:20:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:20:59 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-07-24 07:20:59 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-07-24 07:20:59 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\server.py', reloading
+2025-07-24 07:20:59 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socketserver.py', reloading
+2025-07-24 07:20:59 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\threading.py', reloading
+2025-07-24 07:21:33 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:21:33 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:21:33 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 07:21:43 [WARNING]  * Debugger is active!
+2025-07-24 07:21:43 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 07:21:54 [INFO] 127.0.0.1 - - [24/Jul/2025 07:21:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:21:57 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\pipeline.py', reloading
+2025-07-24 07:21:57 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\prompt_generation.py', reloading
+2025-07-24 07:23:31 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:23:31 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:23:31 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 07:23:40 [WARNING]  * Debugger is active!
+2025-07-24 07:23:40 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 07:24:15 [INFO] 127.0.0.1 - - [24/Jul/2025 07:24:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:24:54 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_generator.py', reloading
+2025-07-24 07:24:54 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_cleaning.py', reloading
+2025-07-24 07:25:49 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:25:49 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:25:49 [INFO]  * Restarting with watchdog (windowsapi)
+2025-07-24 07:25:58 [WARNING]  * Debugger is active!
+2025-07-24 07:25:58 [INFO]  * Debugger PIN: 389-835-780
+2025-07-24 07:26:17 [INFO] 127.0.0.1 - - [24/Jul/2025 07:26:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:26:38 [INFO]  * Detected change in 'C:\\Users\\sathu\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pandasai\\pipelines\\chat\\result_validation.py', reloading
+2025-07-24 07:26:38 [INFO] 127.0.0.1 - - [24/Jul/2025 07:26:38] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:31:16 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:31:16 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:32:01 [INFO] 127.0.0.1 - - [24/Jul/2025 07:32:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:32:34 [INFO] 127.0.0.1 - - [24/Jul/2025 07:32:34] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:32:58 [INFO] 127.0.0.1 - - [24/Jul/2025 07:32:58] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:33:21 [INFO] 127.0.0.1 - - [24/Jul/2025 07:33:21] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:34:23 [INFO] 127.0.0.1 - - [24/Jul/2025 07:34:23] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:34:23 [INFO] 127.0.0.1 - - [24/Jul/2025 07:34:23] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:44:23 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 07:44:23 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 07:44:58 [INFO] 127.0.0.1 - - [24/Jul/2025 07:44:58] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:45:17 [INFO] 127.0.0.1 - - [24/Jul/2025 07:45:17] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:45:35 [INFO] 127.0.0.1 - - [24/Jul/2025 07:45:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:45:42 [INFO] 127.0.0.1 - - [24/Jul/2025 07:45:42] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:45:59 [INFO] 127.0.0.1 - - [24/Jul/2025 07:45:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:46:10 [INFO] 127.0.0.1 - - [24/Jul/2025 07:46:10] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:46:28 [INFO] 127.0.0.1 - - [24/Jul/2025 07:46:28] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:46:37 [INFO] 127.0.0.1 - - [24/Jul/2025 07:46:37] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:47:12 [INFO] 127.0.0.1 - - [24/Jul/2025 07:47:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:47:34 [INFO] 127.0.0.1 - - [24/Jul/2025 07:47:34] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:48:08 [INFO] 127.0.0.1 - - [24/Jul/2025 07:48:08] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:48:38 [INFO] 127.0.0.1 - - [24/Jul/2025 07:48:38] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:49:31 [INFO] 127.0.0.1 - - [24/Jul/2025 07:49:31] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:49:57 [INFO] 127.0.0.1 - - [24/Jul/2025 07:49:57] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:50:18 [INFO] 127.0.0.1 - - [24/Jul/2025 07:50:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:50:43 [ERROR] Failed with error: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 11, in <module>
+NameError: name 'AttributeError' is not defined
+
+2025-07-24 07:50:43 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 07:51:10 [ERROR] Failed with error: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 11, in <module>
+NameError: name 'Exception' is not defined
+
+2025-07-24 07:51:10 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2025-07-24 07:51:53 [INFO] 127.0.0.1 - - [24/Jul/2025 07:51:53] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:52:59 [INFO] 127.0.0.1 - - [24/Jul/2025 07:52:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:53:48 [INFO] 127.0.0.1 - - [24/Jul/2025 07:53:48] "POST /chat HTTP/1.1" 200 -
+2025-07-24 07:56:49 [INFO] 127.0.0.1 - - [24/Jul/2025 07:56:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 07:56:57 [INFO] 127.0.0.1 - - [24/Jul/2025 07:56:57] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:09:10 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 08:09:10 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 08:09:30 [INFO] 127.0.0.1 - - [24/Jul/2025 08:09:30] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:10:03 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 14, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 08:10:03 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 08:10:33 [INFO] 127.0.0.1 - - [24/Jul/2025 08:10:33] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:11:35 [INFO] 127.0.0.1 - - [24/Jul/2025 08:11:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:11:36 [INFO] 127.0.0.1 - - [24/Jul/2025 08:11:36] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:25:32 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 08:25:32 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 08:25:55 [INFO] 127.0.0.1 - - [24/Jul/2025 08:25:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:26:22 [INFO] 127.0.0.1 - - [24/Jul/2025 08:26:22] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:26:49 [INFO] 127.0.0.1 - - [24/Jul/2025 08:26:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:26:50 [INFO] 127.0.0.1 - - [24/Jul/2025 08:26:50] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:35:49 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 08:35:49 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 08:36:16 [INFO] 127.0.0.1 - - [24/Jul/2025 08:36:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:36:38 [INFO] 127.0.0.1 - - [24/Jul/2025 08:36:38] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:38:28 [INFO] 127.0.0.1 - - [24/Jul/2025 08:38:28] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:39:06 [INFO] 127.0.0.1 - - [24/Jul/2025 08:39:06] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-07-24 08:44:22 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 08:44:22 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 08:44:43 [INFO] 127.0.0.1 - - [24/Jul/2025 08:44:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:45:02 [INFO] 127.0.0.1 - - [24/Jul/2025 08:45:02] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:45:40 [INFO] 127.0.0.1 - - [24/Jul/2025 08:45:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:46:16 [INFO] 127.0.0.1 - - [24/Jul/2025 08:46:16] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:49:00 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 08:49:00 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 08:49:21 [INFO] 127.0.0.1 - - [24/Jul/2025 08:49:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:49:53 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 08:49:53 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 08:50:30 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+AttributeError: 'Period' object has no attribute 'month_name'
+
+2025-07-24 08:50:30 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2025-07-24 08:50:47 [INFO] 127.0.0.1 - - [24/Jul/2025 08:50:47] "POST /chat HTTP/1.1" 200 -
+2025-07-24 08:52:23 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 08:52:23 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 08:52:47 [INFO] 127.0.0.1 - - [24/Jul/2025 08:52:47] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 08:53:20 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 11, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 08:53:20 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 08:53:54 [INFO] 127.0.0.1 - - [24/Jul/2025 08:53:54] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:06:26 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:06:26 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:06:48 [INFO] 127.0.0.1 - - [24/Jul/2025 09:06:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:07:15 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 09:07:15 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 09:07:40 [INFO] 127.0.0.1 - - [24/Jul/2025 09:07:40] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:08:23 [INFO] 127.0.0.1 - - [24/Jul/2025 09:08:23] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:08:49 [INFO] 127.0.0.1 - - [24/Jul/2025 09:08:49] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:09:13 [INFO] 127.0.0.1 - - [24/Jul/2025 09:09:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:09:35 [INFO] 127.0.0.1 - - [24/Jul/2025 09:09:35] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:14:09 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:14:09 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:14:27 [INFO] 127.0.0.1 - - [24/Jul/2025 09:14:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:15:03 [INFO] 127.0.0.1 - - [24/Jul/2025 09:15:03] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:22:27 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:22:27 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:22:45 [INFO] 127.0.0.1 - - [24/Jul/2025 09:22:45] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:22:54 [INFO] 127.0.0.1 - - [24/Jul/2025 09:22:54] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:23:09 [INFO] 127.0.0.1 - - [24/Jul/2025 09:23:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:24:31 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 20, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 09:24:31 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 09:24:59 [INFO] 127.0.0.1 - - [24/Jul/2025 09:24:59] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:25:04 [INFO] 127.0.0.1 - - [24/Jul/2025 09:25:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:25:31 [INFO] 127.0.0.1 - - [24/Jul/2025 09:25:31] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:25:52 [INFO] 127.0.0.1 - - [24/Jul/2025 09:25:52] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:26:18 [INFO] 127.0.0.1 - - [24/Jul/2025 09:26:18] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:26:59 [INFO] 127.0.0.1 - - [24/Jul/2025 09:26:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:26:59 [INFO] 127.0.0.1 - - [24/Jul/2025 09:26:59] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:31:28 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:31:28 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:31:52 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:31:52 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:32:12 [INFO] 127.0.0.1 - - [24/Jul/2025 09:32:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:32:12 [INFO] 127.0.0.1 - - [24/Jul/2025 09:32:12] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:35:20 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:35:20 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:35:45 [INFO] 127.0.0.1 - - [24/Jul/2025 09:35:45] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:35:46 [INFO] 127.0.0.1 - - [24/Jul/2025 09:35:46] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:37:59 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:37:59 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:38:16 [INFO] 127.0.0.1 - - [24/Jul/2025 09:38:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:38:16 [INFO] 127.0.0.1 - - [24/Jul/2025 09:38:16] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:41:11 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:41:11 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:45:42 [INFO] 127.0.0.1 - - [24/Jul/2025 09:45:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:46:12 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 19, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 09:46:12 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 09:46:35 [INFO] 127.0.0.1 - - [24/Jul/2025 09:46:35] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:46:56 [INFO] 127.0.0.1 - - [24/Jul/2025 09:46:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:46:57 [INFO] 127.0.0.1 - - [24/Jul/2025 09:46:57] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:52:58 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:52:58 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:53:36 [INFO] 127.0.0.1 - - [24/Jul/2025 09:53:36] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:53:37 [INFO] 127.0.0.1 - - [24/Jul/2025 09:53:37] "POST /chat HTTP/1.1" 200 -
+2025-07-24 09:55:47 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 09:55:47 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 09:56:09 [INFO] 127.0.0.1 - - [24/Jul/2025 09:56:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 09:56:09 [INFO] 127.0.0.1 - - [24/Jul/2025 09:56:09] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:03:57 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 10:03:57 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 10:04:25 [INFO] 127.0.0.1 - - [24/Jul/2025 10:04:25] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:04:51 [INFO] 127.0.0.1 - - [24/Jul/2025 10:04:51] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:05:16 [INFO] 127.0.0.1 - - [24/Jul/2025 10:05:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:05:30 [INFO] 127.0.0.1 - - [24/Jul/2025 10:05:30] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:05:49 [INFO] 127.0.0.1 - - [24/Jul/2025 10:05:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:05:49 [INFO] 127.0.0.1 - - [24/Jul/2025 10:05:49] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:12:00 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 10:12:00 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 10:12:29 [INFO] 127.0.0.1 - - [24/Jul/2025 10:12:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:12:52 [ERROR] Unable to extract filters for passed code
+2025-07-24 10:12:52 [INFO] 127.0.0.1 - - [24/Jul/2025 10:12:52] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:13:17 [INFO] 127.0.0.1 - - [24/Jul/2025 10:13:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:13:36 [INFO] 127.0.0.1 - - [24/Jul/2025 10:13:36] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:13:54 [INFO] 127.0.0.1 - - [24/Jul/2025 10:13:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:14:23 [INFO] 127.0.0.1 - - [24/Jul/2025 10:14:23] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:14:42 [INFO] 127.0.0.1 - - [24/Jul/2025 10:14:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:15:02 [INFO] 127.0.0.1 - - [24/Jul/2025 10:15:02] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:16:23 [INFO] 127.0.0.1 - - [24/Jul/2025 10:16:23] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:16:35 [INFO] 127.0.0.1 - - [24/Jul/2025 10:16:35] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:16:50 [INFO] 127.0.0.1 - - [24/Jul/2025 10:16:50] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:16:51 [INFO] 127.0.0.1 - - [24/Jul/2025 10:16:51] "POST /chat HTTP/1.1" 200 -
+2025-07-24 10:17:27 [INFO] 127.0.0.1 - - [24/Jul/2025 10:17:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 10:17:39 [INFO] 127.0.0.1 - - [24/Jul/2025 10:17:39] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:15:56 [INFO] 127.0.0.1 - - [24/Jul/2025 12:15:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:15:56 [INFO] 127.0.0.1 - - [24/Jul/2025 12:15:56] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:17:11 [INFO] 127.0.0.1 - - [24/Jul/2025 12:17:11] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:17:20 [INFO] 127.0.0.1 - - [24/Jul/2025 12:17:20] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-07-24 12:17:37 [INFO] 127.0.0.1 - - [24/Jul/2025 12:17:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:17:49 [INFO] 127.0.0.1 - - [24/Jul/2025 12:17:49] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-07-24 12:19:28 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-24 12:19:28 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-24 12:19:41 [INFO] 127.0.0.1 - - [24/Jul/2025 12:19:41] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:19:55 [INFO] 127.0.0.1 - - [24/Jul/2025 12:19:55] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:20:00 [INFO] 127.0.0.1 - - [24/Jul/2025 12:20:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:20:25 [INFO] 127.0.0.1 - - [24/Jul/2025 12:20:25] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-07-24 12:21:02 [INFO] 127.0.0.1 - - [24/Jul/2025 12:21:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:21:21 [INFO] 127.0.0.1 - - [24/Jul/2025 12:21:21] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:22:24 [INFO] 127.0.0.1 - - [24/Jul/2025 12:22:24] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:22:51 [INFO] 127.0.0.1 - - [24/Jul/2025 12:22:51] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:23:27 [INFO] 127.0.0.1 - - [24/Jul/2025 12:23:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:23:51 [INFO] 127.0.0.1 - - [24/Jul/2025 12:23:51] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:33:48 [INFO] 127.0.0.1 - - [24/Jul/2025 12:33:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:33:48 [INFO] 127.0.0.1 - - [24/Jul/2025 12:33:48] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:37:29 [INFO] 127.0.0.1 - - [24/Jul/2025 12:37:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:38:07 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sathu\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 19, in <module>
+  File "pandas\_libs\tslibs\timestamps.pyx", line 1496, in pandas._libs.tslibs.timestamps.Timestamp.strftime
+KeyError: '__import__'
+
+2025-07-24 12:38:07 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-07-24 12:38:29 [INFO] 127.0.0.1 - - [24/Jul/2025 12:38:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:38:33 [INFO] 127.0.0.1 - - [24/Jul/2025 12:38:33] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:39:17 [INFO] 127.0.0.1 - - [24/Jul/2025 12:39:17] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:39:20 [INFO] 127.0.0.1 - - [24/Jul/2025 12:39:20] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:39:48 [INFO] 127.0.0.1 - - [24/Jul/2025 12:39:48] "POST /chat HTTP/1.1" 200 -
+2025-07-24 12:41:08 [INFO] 127.0.0.1 - - [24/Jul/2025 12:41:08] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 12:41:45 [INFO] 127.0.0.1 - - [24/Jul/2025 12:41:45] "POST /chat HTTP/1.1" 200 -
+2025-07-24 13:28:15 [INFO] 127.0.0.1 - - [24/Jul/2025 13:28:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-24 13:28:15 [INFO] 127.0.0.1 - - [24/Jul/2025 13:28:15] "POST /chat HTTP/1.1" 200 -
+2025-07-25 11:50:00 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-25 11:50:00 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-25 12:22:20 [INFO] 127.0.0.1 - - [25/Jul/2025 12:22:20] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-25 12:22:50 [INFO] 127.0.0.1 - - [25/Jul/2025 12:22:50] "POST /chat HTTP/1.1" 200 -
+2025-07-25 12:23:26 [INFO] 127.0.0.1 - - [25/Jul/2025 12:23:26] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-25 12:23:54 [INFO] 127.0.0.1 - - [25/Jul/2025 12:23:54] "POST /chat HTTP/1.1" 200 -
+2025-07-25 14:07:28 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-25 14:07:28 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-25 14:08:16 [INFO] 127.0.0.1 - - [25/Jul/2025 14:08:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-07-25 14:08:39 [ERROR] Pipeline failed on step 3: No code found in the response
+2025-07-25 14:08:39 [INFO] 127.0.0.1 - - [25/Jul/2025 14:08:39] "POST /chat HTTP/1.1" 200 -
+2025-08-03 19:56:11 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-03 19:56:11 [INFO] [33mPress CTRL+C to quit[0m
+2025-08-03 20:02:05 [INFO] 127.0.0.1 - - [03/Aug/2025 20:02:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-08-03 20:02:45 [INFO] 127.0.0.1 - - [03/Aug/2025 20:02:45] "POST /chat HTTP/1.1" 200 -
